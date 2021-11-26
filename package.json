@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start-dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +21,10 @@
   "homepage": "https://github.com/salmanprottoy/bedroom-villas-assignment#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^6.13.0",
     "nodemon": "^2.0.15"
   }
 }

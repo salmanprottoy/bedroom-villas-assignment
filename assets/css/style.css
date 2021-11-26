@@ -1,0 +1,212 @@
+.menu-hover-item {
+  display: none;
+  position: absolute;
+}
+
+.menu-hover:hover + .menu-hover-item {
+  display: block;
+}
+
+.dropdown-button {
+  background-color: #fff;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: #ffffff;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  text-indent: 25px;
+  border: 2px solid #ccc;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.search .fa-search-location {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.checkinCheckout {
+  position: relative;
+}
+
+.checkinCheckout input {
+  /* height: 60px; */
+  text-indent: 25px;
+  border: 2px solid #ccc;
+}
+
+.checkinCheckout .fa-calendar-alt {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.fa-calendar-alt {
+  color: #4db;
+}
+
+.btn-search {
+  background-color: #f92;
+  color: #fff;
+}
+.btn-search:hover {
+  background-color: rgba(211, 122, 21, 0.815);
+  color: #fff;
+}
+.btn-filter {
+  background-color: #357;
+  color: #fff;
+}
+.btn-filter:hover {
+  background-color: rgba(70, 123, 175, 0.904);
+  color: #fff;
+}
+
+.vacation-rentals {
+  color: #f83;
+}
+.label-card-text {
+  color: rgb(39, 179, 167);
+}
+.fa-star,
+.fa-star-half {
+  color: #248;
+}
+.btn-view-more {
+  background-color: #f83;
+  color: #fff;
+}
+.btn-view-more:hover {
+  background-color: rgba(250, 147, 73, 0.788);
+  color: #fff;
+}
+.img-2 {
+  width: 25px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+.heart-1,
+.more-photo,
+.cash-1 {
+  border: none;
+}
+
+.heart-1 {
+  opacity: 55%;
+  background-color: black;
+  color: #fff;
+}
+.more-photo {
+  opacity: 80%;
+}
+.cash-1 {
+  padding-top: 25%;
+  opacity: 80%;
+}
+.heart-cash {
+  padding-top: 45%;
+}
+
+.container-img {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  opacity: 80%;
+  top: 5%;
+  right: 20px;
+}
+.bottom-right {
+  position: absolute;
+  opacity: 80%;
+  top: 80%;
+  right: 20px;
+}
+.bottom-left {
+  position: absolute;
+  opacity: 80%;
+  top: 80%;
+  left: 20px;
+}
+.inline-group {
+  max-width: 15rem;
+  padding: 0.8rem;
+}
+
+.inline-group .form-control {
+  text-align: right;
+}
+
+.form-control[type="number"]::-webkit-inner-spin-button,
+.form-control[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.icon-shape {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+#map {
+  height: 100vh;
+}
+.fa-minus-circle,
+.fa-plus-circle {
+  color: #f83;
+}
