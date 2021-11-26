@@ -5,6 +5,9 @@ const app = express();
 //config
 app.set("view engine", "ejs");
 
+//middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+
 //route
 app.get("/", (req, res) => {
   res.send("Hello from express server");
