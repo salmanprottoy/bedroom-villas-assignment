@@ -1,6 +1,6 @@
 <%- include('./index.ejs')%>
 
-<div class="bg-light">
+<div class="bg-light" id="fahrenheitButtonArea">
   <div class="d-flex justify-content-center mt-3 mb-3">
     <button class="btn btn-dark rounded-pill" id="fahrenheitButton">
       Show Temperature in Fahrenheit &nbsp;
@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-light" id="celsiusButtonArea">
   <div class="d-flex justify-content-center mt-3 mb-3">
     <button class="btn btn-dark rounded-pill" id="celsiusButton">
       Show Temperature in Celsius &nbsp;
@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<section class="px-3 my-4" id="weatherInC">
+<div class="px-3 my-4" id="weatherInC">
   <h3 class="py-3">
     Weather: <%= weatherData.city %> , <%= weatherData.country %>
   </h3>
@@ -78,9 +78,9 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="px-3 my-4" id="weatherInF">
+<div class="px-3 my-4" id="weatherInF">
   <h3 class="py-3">
     Weather: <%= weatherData.city %> , <%= weatherData.country %>
   </h3>
@@ -140,26 +140,33 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <script>
+  let fahrenheitButtonArea = document.getElementById("fahrenheitButtonArea");
+  let celsiusButtonArea = document.getElementById("celsiusButtonArea");
   let fahrenheitButton = document.getElementById("fahrenheitButton");
   let celsiusButton = document.getElementById("celsiusButton");
   let weatherInC = document.getElementById("weatherInC");
   let weatherInF = document.getElementById("weatherInF");
 
+  celsiusButtonArea.style.display = "none";
   celsiusButton.style.display = "none";
   weatherInF.style.display = "none";
 
   fahrenheitButton.onclick = function () {
+    celsiusButtonArea.style.display = "block";
     celsiusButton.style.display = "block";
     weatherInF.style.display = "block";
+    fahrenheitButtonArea.style.display = "none";
     fahrenheitButton.style.display = "none";
     weatherInC.style.display = "none";
   };
   celsiusButton.onclick = function () {
+    celsiusButtonArea.style.display = "none";
     celsiusButton.style.display = "none";
     weatherInF.style.display = "none";
+    fahrenheitButtonArea.style.display = "block";
     fahrenheitButton.style.display = "block";
     weatherInC.style.display = "block";
   };
