@@ -1,0 +1,62 @@
+<%- include('./index.ejs')%>
+<section class="px-3 my-4">
+  <h3 class="py-3">
+    Weather: <%= weatherData.city %> , <%= weatherData.country %>
+  </h3>
+  <div>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-sun fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">December - February</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_c %> °C <br />
+              Min: <%= weatherData.min_temp_in_c %> °C <br />
+              Avg: <%= weatherData.avg_temp_in_c %> °C
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="far fa-snowflake fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">March - May</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_c %> °C <br />
+              Min: <%= weatherData.min_temp_in_c %> °C <br />
+              Avg: <%= weatherData.avg_temp_in_c %> °C
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-rain fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">June - August</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_c %> °C <br />
+              Min: <%= weatherData.min_temp_in_c %> °C <br />
+              Avg: <%= weatherData.avg_temp_in_c %> °C
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-showers-heavy fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">September - November</h5>
+            <p class="card-text">
+              HMax: <%= weatherData.max_temp_in_c %> °C <br />
+              Min: <%= weatherData.min_temp_in_c %> °C <br />
+              Avg: <%= weatherData.avg_temp_in_c %> °C
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
