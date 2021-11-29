@@ -1,5 +1,24 @@
 <%- include('./index.ejs')%>
-<section class="px-3 my-4">
+
+<div class="bg-light">
+  <div class="d-flex justify-content-center mt-3 mb-3">
+    <button class="btn btn-dark rounded-pill" id="fahrenheitButton">
+      Show Temperature in Fahrenheit &nbsp;
+      <i class="fas fa-temperature-low"></i>
+    </button>
+  </div>
+</div>
+
+<div class="bg-light">
+  <div class="d-flex justify-content-center mt-3 mb-3">
+    <button class="btn btn-dark rounded-pill" id="celsiusButton">
+      Show Temperature in Celsius &nbsp;
+      <i class="fas fa-temperature-low"></i>
+    </button>
+  </div>
+</div>
+
+<section class="px-3 my-4" id="weatherInC">
   <h3 class="py-3">
     Weather: <%= weatherData.city %> , <%= weatherData.country %>
   </h3>
@@ -60,3 +79,88 @@
     </div>
   </div>
 </section>
+
+<section class="px-3 my-4" id="weatherInF">
+  <h3 class="py-3">
+    Weather: <%= weatherData.city %> , <%= weatherData.country %>
+  </h3>
+  <div>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-sun fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">December - February</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_f %> °F <br />
+              Min: <%= weatherData.min_temp_in_f %> °F <br />
+              Avg: <%= weatherData.avg_temp_in_f %> °F
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="far fa-snowflake fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">March - May</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_f %> °F <br />
+              Min: <%= weatherData.min_temp_in_f %> °F <br />
+              Avg: <%= weatherData.avg_temp_in_f %> °F
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-rain fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">June - August</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_f %> °F <br />
+              Min: <%= weatherData.min_temp_in_f %> °F <br />
+              Avg: <%= weatherData.avg_temp_in_f %> °F
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card p-3">
+          <i class="fas fa-cloud-showers-heavy fa-4x text-center"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">September - November</h5>
+            <p class="card-text">
+              Max: <%= weatherData.max_temp_in_f %> °F <br />
+              Min: <%= weatherData.min_temp_in_f %> °F <br />
+              Avg: <%= weatherData.avg_temp_in_f %> °F
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let fahrenheitButton = document.getElementById("fahrenheitButton");
+  let celsiusButton = document.getElementById("celsiusButton");
+  let weatherInC = document.getElementById("weatherInC");
+  let weatherInF = document.getElementById("weatherInF");
+
+  celsiusButton.style.display = "none";
+  weatherInF.style.display = "none";
+
+  fahrenheitButton.onclick = function () {
+    celsiusButton.style.display = "block";
+    weatherInF.style.display = "block";
+    fahrenheitButton.style.display = "none";
+    weatherInC.style.display = "none";
+  };
+  celsiusButton.onclick = function () {
+    celsiusButton.style.display = "none";
+    weatherInF.style.display = "none";
+    fahrenheitButton.style.display = "block";
+    weatherInC.style.display = "block";
+  };
+</script>
