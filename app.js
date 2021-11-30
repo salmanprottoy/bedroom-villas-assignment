@@ -138,11 +138,12 @@ app.get("/all/:country", apiRequestLimiter, (req, res) => {
               );
             }
           });
-          if (weatherData.city.toLowerCase() == country.toLowerCase()) {
-            res.render("error");
+          if (weatherData.country.toLowerCase() == country.toLowerCase()) {
+            res.render("home/weather", { weatherData: weatherData });
           }
-
-          res.render("home/weather", { weatherData: weatherData });
+          res.render("error");
+        } else if (response.statusCode == "400") {
+          res.render("error");
         }
       });
     }
@@ -259,6 +260,8 @@ app.get("/all/:country/:city", apiRequestLimiter, (req, res) => {
           });
 
           res.render("home/weather", { weatherData: weatherData });
+        } else if (response.statusCode == "400") {
+          res.render("error");
         }
       });
     }

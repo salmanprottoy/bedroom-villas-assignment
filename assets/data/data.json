@@ -88,17 +88,6 @@
     "avg_temp_in_f": 74.83
   },
   {
-    "city": "Japan",
-    "country": "USA United States of America",
-    "iconSrc": "//cdn.weatherapi.com/weather/64x64/night/113.png",
-    "max_temp_in_c": 19.4,
-    "max_temp_in_f": 66.93,
-    "min_temp_in_c": 7.57,
-    "min_temp_in_f": 45.63,
-    "avg_temp_in_c": 12.2,
-    "avg_temp_in_f": 54
-  },
-  {
     "city": "Madrid",
     "country": "Spain",
     "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
