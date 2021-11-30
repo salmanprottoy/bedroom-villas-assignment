@@ -1,0 +1,145 @@
+[
+  {
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    "max_temp_in_c": 32.33,
+    "max_temp_in_f": 90.2,
+    "min_temp_in_c": 18.67,
+    "min_temp_in_f": 65.63,
+    "avg_temp_in_c": 24.57,
+    "avg_temp_in_f": 76.27
+  },
+  {
+    "city": "Kolkata",
+    "country": "India",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/143.png",
+    "max_temp_in_c": 30.9,
+    "max_temp_in_f": 87.63,
+    "min_temp_in_c": 18.1,
+    "min_temp_in_f": 64.6,
+    "avg_temp_in_c": 23.87,
+    "avg_temp_in_f": 74.93
+  },
+  {
+    "city": "Pune",
+    "country": "India",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+    "max_temp_in_c": 23.77,
+    "max_temp_in_f": 74.8,
+    "min_temp_in_c": 15.5,
+    "min_temp_in_f": 59.9,
+    "avg_temp_in_c": 19.63,
+    "avg_temp_in_f": 67.4
+  },
+  {
+    "city": "Colorado Springs",
+    "country": "United States of America",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+    "max_temp_in_c": 17.67,
+    "max_temp_in_f": 63.8,
+    "min_temp_in_c": 0.93,
+    "min_temp_in_f": 33.67,
+    "avg_temp_in_c": 8.33,
+    "avg_temp_in_f": 47
+  },
+  {
+    "city": "Concordia",
+    "country": "Argentina",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    "max_temp_in_c": 32.9,
+    "max_temp_in_f": 91.2,
+    "min_temp_in_c": 14.83,
+    "min_temp_in_f": 58.7,
+    "avg_temp_in_c": 23.63,
+    "avg_temp_in_f": 74.57
+  },
+  {
+    "city": "Sylhet",
+    "country": "Bangladesh",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    "max_temp_in_c": 32.03,
+    "max_temp_in_f": 89.67,
+    "min_temp_in_c": 15.53,
+    "min_temp_in_f": 59.97,
+    "avg_temp_in_c": 22.4,
+    "avg_temp_in_f": 72.33
+  },
+  {
+    "city": "Chittagong",
+    "country": "Bangladesh",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/143.png",
+    "max_temp_in_c": 29.4,
+    "max_temp_in_f": 84.9,
+    "min_temp_in_c": 19.7,
+    "min_temp_in_f": 67.43,
+    "avg_temp_in_c": 23.9,
+    "avg_temp_in_f": 74.93
+  },
+  {
+    "city": "Barisal",
+    "country": "Bangladesh",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    "max_temp_in_c": 31.73,
+    "max_temp_in_f": 89.1,
+    "min_temp_in_c": 17.93,
+    "min_temp_in_f": 64.27,
+    "avg_temp_in_c": 23.8,
+    "avg_temp_in_f": 74.83
+  },
+  {
+    "city": "Japan",
+    "country": "USA United States of America",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+    "max_temp_in_c": 19.4,
+    "max_temp_in_f": 66.93,
+    "min_temp_in_c": 7.57,
+    "min_temp_in_f": 45.63,
+    "avg_temp_in_c": 12.2,
+    "avg_temp_in_f": 54
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+    "max_temp_in_c": 11.8,
+    "max_temp_in_f": 53.23,
+    "min_temp_in_c": 5.03,
+    "min_temp_in_f": 41.03,
+    "avg_temp_in_c": 7.83,
+    "avg_temp_in_f": 46.1
+  },
+  {
+    "city": "Osaka-Shi",
+    "country": "Japan",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/night/296.png",
+    "max_temp_in_c": 12.37,
+    "max_temp_in_f": 54.27,
+    "min_temp_in_c": 6.53,
+    "min_temp_in_f": 43.77,
+    "avg_temp_in_c": 9.97,
+    "avg_temp_in_f": 49.9
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+    "max_temp_in_c": 16.03,
+    "max_temp_in_f": 60.87,
+    "min_temp_in_c": 9.97,
+    "min_temp_in_f": 49.97,
+    "avg_temp_in_c": 13.4,
+    "avg_temp_in_f": 56.2
+  },
+  {
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "iconSrc": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+    "max_temp_in_c": 30.03,
+    "max_temp_in_f": 86.03,
+    "min_temp_in_c": 21.6,
+    "min_temp_in_f": 70.87,
+    "avg_temp_in_c": 24.87,
+    "avg_temp_in_f": 76.8
+  }
+]
