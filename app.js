@@ -1,7 +1,8 @@
 const express = require("express");
 const http = require("https");
 const request = require("request");
-var axios = require("axios");
+const rateLimit = require("express-rate-limit");
+const axios = require("axios");
 const bodyParser = require("body-parser");
 const explayouts = require("express-ejs-layouts");
 const { check, validationResult } = require("express-validator");
@@ -22,7 +23,14 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/all/:country", (req, res) => {
+const apiRequestLimiter = rateLimit({
+  windowMs: 1 * 30 * 1000, // 30 second
+  max: 1, // start blocking after 1 requests
+  message:
+    "Too many API request from this IP, please try again after 30 second",
+});
+
+app.get("/all/:country", apiRequestLimiter, (req, res) => {
   var country = req.params.country;
   const options = {
     method: "GET",
@@ -79,7 +87,7 @@ app.get("/all/:country", (req, res) => {
   });
 });
 
-app.get("/all/:country/:city", (req, res) => {
+app.get("/all/:country/:city", apiRequestLimiter, (req, res) => {
   var country = req.params.country;
   var city = req.params.city;
   var query = city ? city : country;
